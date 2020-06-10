@@ -1,0 +1,18 @@
+version: "3"
+services:
+  app:
+    build: .
+    depends_on:
+      - postgres
+    ports:
+      - "3000:3000"
+      - "9229:9229"
+
+  postgres:
+    environment:
+      DB_HOSTNAME: host.docker.internal
+    image: postgres:11.2-alpine
+    ports:
+      - "5432:5432"
+    volumes:
+      - ~/dbdata:/var/lib/postgresql/data

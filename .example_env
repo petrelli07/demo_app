@@ -1,0 +1,13 @@
+DB_USERNAME=postgres
+DB_PASSWORD=myname1234
+DB_NAME=demo_app
+DB_HOSTNAME= host.docker.internal
+
+
+
+#The port to run the node server in the local machine
+API_PORT=3080
+
+#the url the front end application is running on should begin with http or https
+
+
